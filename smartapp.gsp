@@ -33,7 +33,7 @@ def installed()
 
 def updated()
 {
-	unsubscribe()
+    unsubscribe()
     subscribe(switch2.switch)
 	
 }
@@ -86,7 +86,7 @@ def "switch"(evt){
 	acsLogin()
     if (evt.value == "on") {
 		log.debug "turning on switch"
-    ACSPush("Your lights are on.")
+                ACSPush("Your lights are on.")
 	} else if (evt.value == "off") {
 		log.debug "turning off switch"
 		ACSPush("Your lights are off.")
